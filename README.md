@@ -75,7 +75,7 @@ Para realizar o deploy manualmente na sua conta Vercel:
 
 ## ✉️ Contato
 
-* **LinkedIn:** (https://www.linkedin.com/in/liliane-lima-ti/](https://www.linkedin.com/in/liliane-lima-ti/))
+* **LinkedIn:** https://www.linkedin.com/in/liliane-lima-ti/
 * **GitHub:** [@Li-code1](https://github.com/Li-code1)
 * **Email:** li.lima662@gmail.com
 
