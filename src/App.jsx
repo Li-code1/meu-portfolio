@@ -42,17 +42,26 @@ Atualmente graduanda em Análise e Desenvolvimento de Sistemas, possuo pós-grad
           </div>
         </section>
 
-        <section id="contato">
-          <h2 className="section-title">Contato</h2>
-          <div className="contact-wrapper">
-            <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
-              <input type="text" placeholder="Nome" required />
-              <input type="email" placeholder="E-mail" required />
-              <textarea placeholder="Mensagem" rows="4"></textarea>
-              <button type="submit">Enviar</button>
-            </form>
-          </div>
-        </section>
+        {/* SEÇÃO CONTATO TOTALMENTE GRATUITA */}
+<section id="contato">
+  <h2 className="section-title">Vamos conversar?</h2>
+  <div className="contact-wrapper">
+    <form action="https://api.web3forms.com/submit" method="POST" className="contact-form">
+      
+      {/* COLE SUA CHAVE AQUI NO VALUE */}
+      <input type="hidden" name="access_key" value="70ce1932-823e-418a-984e-3c088afa0b44" />
+
+      <input type="text" name="name" placeholder="Seu Nome" required />
+      <input type="email" name="email" placeholder="Seu E-mail" required />
+      <textarea name="message" placeholder="Sua Mensagem" rows="4" required></textarea>
+      
+      {/* Opcional: Redirecionar para uma página de "Obrigado" */}
+      <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+  </div>
+</section>
       </main>
     </div>
   );

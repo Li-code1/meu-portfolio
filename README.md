@@ -8,6 +8,8 @@ Este é o meu portfólio profissional, desenvolvido para apresentar minhas habil
 
 - **Frontend:** React.js, Vite, Tailwind CSS, Lucide React (Ícones).
 - **Acessibilidade & Qualidade:** SonarLint, ESLint, PropTypes.
+- **Funcionalidades:** Integração com Web3Forms para contato via e-mail.
+- **Deploy:** Vercel.
 
 ---
 
