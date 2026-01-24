@@ -30,7 +30,7 @@ Para clonar e executar este aplicativo em sua máquina, você precisará do [Git
 
 1. **Clonar o repositório:**
    ```bash
-   git clone [https://github.com/Li-code1/meu-portfolio.git](https://github.com/Li-code1/meu-portfolio.git)
+   git clone https://github.com/Li-code1/meu-portfolio.git
 
 ```
 
@@ -63,8 +63,7 @@ A aplicação abrirá em `http://localhost:5173`.
 
 O projeto está configurado para deploy contínuo na **Vercel**.
 
-* **Link para acessar:** [Clique aqui para ver meu Portfólio]([https://seu-projeto.vercel.app](https://meu-portfolio-ecru-nu.vercel.app/))*
-
+* **Link para acessar:** https://meu-portfolio-ecru-nu.vercel.app/
 Para realizar o deploy manualmente na sua conta Vercel:
 
 1. Conecte seu repositório do GitHub ao painel da Vercel.
