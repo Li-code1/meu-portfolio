@@ -63,7 +63,7 @@ A aplicação abrirá em `http://localhost:5173`.
 
 O projeto está configurado para deploy contínuo na **Vercel**.
 
-* **Link para acessar:** [Clique aqui para ver meu Portfólio](https://seu-projeto.vercel.app)*
+* **Link para acessar:** [Clique aqui para ver meu Portfólio]([https://seu-projeto.vercel.app](https://meu-portfolio-ecru-nu.vercel.app/))*
 
 Para realizar o deploy manualmente na sua conta Vercel:
 
