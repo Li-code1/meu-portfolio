@@ -15,8 +15,9 @@ Este é o meu portfólio profissional, desenvolvido para apresentar minhas habil
 
 ## 📂 Projetos em Destaque
 
-### 1. 📊 Calculadora de Gastos Mensais
-Uma ferramenta completa de gestão financeira. Permite ao usuário monitorar entradas e saídas, visualizar gráficos de performance em tempo real com **Chart.js** e exportar relatórios detalhados em **PDF**.
+### 1. 📊 SmartFinance | Consumer Insight Intelligence
+Plataforma de inteligência financeira desenvolvida para transformar a gestão de gastos pessoais em uma experiência analítica e estratégica, auxiliando usuários a identificar padrões de consumo e estabelecer metas de economia inteligentes. 
+Para testar, use o e-mail: admin@admin.com e senha: 123
 
 ### 2. 🐾 Pet&Style
 E-commerce fictício de produtos premium para animais de estimação. Focado em **UI/UX**, o projeto utiliza Tailwind CSS para garantir uma experiência de navegação fluida em qualquer dispositivo.
