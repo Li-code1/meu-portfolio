@@ -179,6 +179,32 @@ section {
   width: 100%; 
 }
 
+/* Ajustes para os botões do card ficarem lado a lado */
+.card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto; /* Empurra os botões para a base do card uniformemente */
+  width: 100%;
+}
+
+.primary-btn {
+  flex: 1; /* Faz o botão de acessar ocupar o maior espaço disponível */
+}
+
+.github-btn {
+  width: 54px;
+  background: #111827; /* Cor escura do GitHub */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 0;
+  transition: 0.3s;
+}
+
+.github-btn:hover {
+  background: #1f2937;
+}
 /* 8. SKILLS */
 .skills-container { 
   display: flex; 
@@ -238,4 +264,72 @@ section {
 @media (hover: hover) {
   .card:hover { transform: translateY(-8px); border-color: var(--primary); }
   .btn-social:hover, .card-button:hover { filter: brightness(1.2); }
+}
+/* ==========================================
+   NOVOS ESTILOS: CARD ACTIONS E SCROLL TO TOP
+   ========================================== */
+
+/* Alinha os botões lado a lado */
+.card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto; /* Garante que os botões fiquem sempre fixados embaixo */
+  width: 100%;
+}
+
+.primary-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondary-btn {
+  width: 50px;
+  background: #111827;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 0;
+}
+
+/* Estilização do Botão Flutuante (Voltar ao Topo) */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.scroll-to-top:hover {
+  background: var(--primary-hover);
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Ajuste para telas pequenas não sobrepor o conteúdo */
+@media (max-width: 768px) {
+  .scroll-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
 }
