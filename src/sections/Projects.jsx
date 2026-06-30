@@ -22,6 +22,13 @@ const meusProjetos = [
     link: "https://drive.google.com/file/d/19wNRsY1oGGSxFcqjQPVsw5kI16BupTla/view?usp=drive_link", 
     githubLink: "https://github.com/Li-code1/desafio-smartmart.git"
   },
+  {
+  title: "PokeFast API",
+  description: "API RESTful de alta performance com consumo concorrente da PokéAPI usando asyncio, cache estratégico com Redis e um ecossistema relacional híbrido com persistência e operações de CRUD local em SQLite.",
+  techs: ["FastAPI", "Python", "Redis", "SQLite", "Pytest"],
+  link: "https://pokefast-api-ebac.onrender.com/docs",
+  githubLink: "https://github.com/Li-code1/pokefast-api.git"
+},
 ];
 
 export function Projects() {
