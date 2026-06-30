@@ -4,12 +4,24 @@ import { ScrollToTop } from './components/ScrollToTop';
 import minhaFoto from './assets/minha-foto.png.jpeg';
 
 function App() {
-  const habilidades = {
-    frontEnd: ["HTML5", "CSS3", "JavaScript", "React.js", "SASS", "jQuery", "Vue.js"],
-    backEnd: ["Python", "FastAPI", "Estrutura de Dados", "POO", "Pytest"],
-    devOpsInfra: ["Docker", "Kubernetes", "Redis", "ELK Stack", "Git / GitHub"],
-    metodologias: ["Metodologias Ágeis", "Perfil Analítico"]
-  };
+  const habilidades = [
+    "Python", 
+    "FastAPI", 
+    "React.js", 
+    "JavaScript", 
+    "HTML5", 
+    "CSS3", 
+    "SASS", 
+    "jQuery", 
+    "Vue.js", 
+    "Docker", 
+    "Kubernetes", 
+    "Redis", 
+    "Pytest", 
+    "ELK Stack", 
+    "Git / GitHub", 
+    "Metodologias Ágeis"
+  ];
 
   return (
     <div className="app-container">
