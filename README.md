@@ -25,6 +25,9 @@ E-commerce fictício de produtos premium para animais de estimação. Focado em 
 ### 3. 📈 SmartMart Pro
 Uma solução **Full Stack** completa. Dashboard interativo para gestão de estoque e vendas, utilizando **React** no frontend e **FastAPI (Python)** no backend para processamento de dados robusto.
 
+### 4. PokeFast API
+API RESTful de alta performance com consumo concorrente da PokéAPI usando asyncio, cache estratégico com Redis e um ecossistema relacional híbrido com persistência e operações de CRUD local em SQLite.
+
 ---
 
 ## 🚀 Como Rodar o Projeto Localmente
