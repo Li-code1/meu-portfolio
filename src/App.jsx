@@ -12,6 +12,7 @@ function App() {
     "HTML5", 
     "CSS3", 
     "SASS", 
+    "BootsTrap",
     "Tailwind CSS", 
     "Next.js", 
     "Docker", 
