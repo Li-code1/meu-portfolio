@@ -25,8 +25,6 @@ function App() {
     "Git / GitHub", 
     "Metodologias Ágeis"
   ];
-}
-
   return (
     <div className="app-container">
       <nav className="navbar">
