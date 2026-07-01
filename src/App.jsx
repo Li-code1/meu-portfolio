@@ -7,6 +7,8 @@ function App() {
   const habilidades = [
     "Python", 
     "FastAPI", 
+    "ORM com SQLAlchemy",
+    "SQLite",
     "React.js", 
     "JavaScript", 
     "HTML5", 
@@ -23,6 +25,7 @@ function App() {
     "Git / GitHub", 
     "Metodologias Ágeis"
   ];
+}
 
   return (
     <div className="app-container">
