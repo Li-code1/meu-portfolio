@@ -68,6 +68,29 @@ body {
   cursor: pointer !important;
 }
 
+/* Toggle de idioma */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 100px;
+  padding: 4px 10px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  cursor: pointer !important;
+}
+
+.lang-toggle .lang-active {
+  color: var(--primary);
+}
+
+.lang-divider {
+  color: #cbd5e1;
+}
+
 /* 4. CONTEÚDO PRINCIPAL */
 .main-content { 
   width: 100%;
@@ -122,8 +145,37 @@ section {
   display: inline-block; 
 }
 
+.availability-badge {
+  background: #dcfce7;
+  color: #15803d;
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.bio-intro {
+  margin-top: 16px;
+}
+
+.bio-points {
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bio-points li {
+  color: #475569;
+  font-size: 0.95rem;
+}
+
 /* 6. BOTÕES E CURSOR */
-.social-group { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
+.social-group { display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap; }
 
 .btn-social, .card-button, button {
   cursor: pointer !important;
@@ -139,6 +191,10 @@ section {
 
 .github { background: #111827; color: white; }
 .linkedin { background: #0077b5; color: white; }
+.resume {
+  background: linear-gradient(90deg, #2563eb, #9333ea);
+  color: white;
+}
 
 /* 7. GRID DE PROJETOS */
 .projects-grid { 
@@ -157,8 +213,19 @@ section {
   transition: 0.4s;
 }
 
-.description-text { color: #475569; font-size: 0.95rem; line-height: 1.6; margin: 20px 0; flex-grow: 1; }
-.tech-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 25px; }
+.description-text { color: #475569; font-size: 0.95rem; line-height: 1.6; margin: 20px 0 0; }
+
+.demo-credentials {
+  background: #f1f5f9;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.8rem;
+  color: #475569;
+  margin: 14px 0 0;
+}
+
+.demo-credentials strong { color: var(--dark); }
+.tech-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 25px; flex-grow: 1; align-content: flex-start; }
 
 .tech-tags span { 
   background: #f1f5f9; 
@@ -206,6 +273,22 @@ section {
   background: #1f2937;
 }
 /* 8. SKILLS */
+.skills-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.skills-group-title {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #94a3b8;
+  margin-bottom: 18px;
+}
+
 .skills-container { 
   display: flex; 
   flex-wrap: wrap; 
@@ -220,6 +303,107 @@ section {
   border-radius: 15px; 
   font-weight: 700; 
   color: var(--primary); 
+}
+
+/* 8b. FORMAÇÃO / TIMELINE */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 700px;
+  margin: 0 auto;
+  border-left: 2px solid #e2e8f0;
+  padding-left: 32px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -39px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #2563eb, #9333ea);
+  border: 3px solid var(--bg);
+}
+
+.timeline-period {
+  display: inline-block;
+  background: #dbeafe;
+  color: #1e40af;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 12px;
+  border-radius: 100px;
+  margin-bottom: 8px;
+}
+
+.timeline-content h3 {
+  font-size: 1.15rem;
+  margin-bottom: 2px;
+}
+
+.timeline-place {
+  display: block;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.timeline-content p {
+  color: #475569;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.complementary-courses {
+  max-width: 700px;
+  margin: 50px auto 0;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.complementary-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.complementary-courses ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.complementary-courses li {
+  color: #475569;
+  font-size: 0.9rem;
+  padding-left: 20px;
+  position: relative;
+}
+
+.complementary-courses li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary);
 }
 
 /* 9. CONTATO */
